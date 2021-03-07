@@ -12,7 +12,7 @@ Docker is needed to run this application locally.
 - from pom.xml in level in skillsmanager package execute command: "mvn clean install -DskipTests" (creating jar)
 - from docker-compose.yml level execute command: "docker-compose up -d --build" (generating docker containers)
 - from docker-compose.yml level execute command: "docker-compose logs -f" (checking logs / if app is successfully running)
-- go to http://localhost:4200 and have fun :)
+- go to http://localhost:4200 and start using :)
 
 #### Screens
-![alt text](https://cdn.imageupload.workers.dev/8FMKwyIm_skills.jpg)
+![alt text](https://github.com/LukaszDorszewicz/skillsmanagerapp/blob/main/skills.jpg)

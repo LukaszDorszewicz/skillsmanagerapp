@@ -13,3 +13,6 @@ Docker is needed to run this application locally.
 - from docker-compose.yml level execute command: "docker-compose up -d --build" (generating docker containers)
 - from docker-compose.yml level execute command: "docker-compose logs -f" (checking logs / if app is successfully running)
 - go to http://localhost:4200 and have fun :)
+
+#### Screens
+![alt text](https://cdn.imageupload.workers.dev/8FMKwyIm_skills.jpg)

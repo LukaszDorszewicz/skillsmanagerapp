@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - skillsmanager-network
+
+  skillsmanager:
+    image: skillsmanager
+    build:
+      context: ./skillsmanager
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - mongodb
+    ports:
+      - "8080:8080"
+    networks:
+      - skillsmanager-network
+
+  skillsmanagerapp:
+    image: skillsmanagerapp
+    build:
+      context: ./skillsmanagerapp
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "4200:4200"
+    networks:
+      - skillsmanager-network
+
+networks:
+  skillsmanager-network:
+
+volumes:
+  mongo_data:

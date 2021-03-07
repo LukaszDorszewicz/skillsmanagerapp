@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: skillsapp
+  data:
+    mongodb:
+      database: test_db
+      host: mongodb
+      port: 27017
